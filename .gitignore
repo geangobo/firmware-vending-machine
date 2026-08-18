@@ -1,0 +1,22 @@
+# Diretórios de compilação
+Debug/
+Release/
+
+# Arquivos compilados e binários
+*.hex
+*.elf
+*.o
+*.a
+*.bin
+*.lss
+*.map
+*.sym
+*.eep
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração de IDE locais (opcional, pode manter o .cproj se quiser versionar o projeto Atmel Studio)
+*.atsln
+*.componentinfo.xml
