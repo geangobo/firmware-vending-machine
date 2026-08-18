@@ -1,4 +1,4 @@
-﻿/*
+/*
  * atuadores.h
  *
  * Created: 19/12/2021 12:22:52
@@ -128,6 +128,8 @@ enum TipoAtuador {
 #define MM_SobeElevador_Com_FimDeCurso_Acionado		15
 #define MM_EsperaElevador_SairDo_FimDeCurso			16
 #define MM_DesceElevador_Com_FimDeCurso_Acionado	17
+#define MM_Pausado_Portinhola_Subindo               18
+#define MM_Pausado_Portinhola_Descendo              19
 
 //Retorno maquina de estados Movimentar Elevador
 #define Status_MM_AcionandoElevador								0
