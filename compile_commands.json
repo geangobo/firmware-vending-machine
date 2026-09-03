@@ -1,0 +1,86 @@
+[
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/_74HC165/_74HC165.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. _74HC165/_74HC165.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "_74HC165/_74HC165.c",
+        "output": ".pio/build/atmega328pb/src/_74HC165/_74HC165.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/_74HC595/_74HC595.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. _74HC595/_74HC595.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "_74HC595/_74HC595.c",
+        "output": ".pio/build/atmega328pb/src/_74HC595/_74HC595.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/adc/adc.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. adc/adc.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "adc/adc.c",
+        "output": ".pio/build/atmega328pb/src/adc/adc.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/atuadores/atuadores.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. atuadores/atuadores.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "atuadores/atuadores.c",
+        "output": ".pio/build/atmega328pb/src/atuadores/atuadores.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/autoteste/autoteste.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. autoteste/autoteste.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "autoteste/autoteste.c",
+        "output": ".pio/build/atmega328pb/src/autoteste/autoteste.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/auxiliar/auxiliar.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. auxiliar/auxiliar.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "auxiliar/auxiliar.c",
+        "output": ".pio/build/atmega328pb/src/auxiliar/auxiliar.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/controlador_de_temperatura/controlador_de_temperatura.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. controlador_de_temperatura/controlador_de_temperatura.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "controlador_de_temperatura/controlador_de_temperatura.c",
+        "output": ".pio/build/atmega328pb/src/controlador_de_temperatura/controlador_de_temperatura.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/eeprom/eeprom.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. eeprom/eeprom.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "eeprom/eeprom.c",
+        "output": ".pio/build/atmega328pb/src/eeprom/eeprom.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/main.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. main.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "main.c",
+        "output": ".pio/build/atmega328pb/src/main.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/sensor_de_queda/sensor_de_queda.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. sensor_de_queda/sensor_de_queda.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "sensor_de_queda/sensor_de_queda.c",
+        "output": ".pio/build/atmega328pb/src/sensor_de_queda/sensor_de_queda.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/sensores/sensores.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. sensores/sensores.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "sensores/sensores.c",
+        "output": ".pio/build/atmega328pb/src/sensores/sensores.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/spi/spi.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. spi/spi.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "spi/spi.c",
+        "output": ".pio/build/atmega328pb/src/spi/spi.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/timer/timers.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. timer/timers.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "timer/timers.c",
+        "output": ".pio/build/atmega328pb/src/timer/timers.o"
+    },
+    {
+        "command": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/atmega328pb/src/usart/usart0.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328pb -Os -Wall -ffunction-sections -fdata-sections -flto -DF_CPU=16000000UL -DPLATFORMIO=60119 -DARDUINO_AVR_ATmega328PB -Iatuadores -Isensores -Iadc -Ispi -I/Users/gean/.platformio/platforms/atmelavr/builder/timers -I. usart/usart0.c",
+        "directory": "/Users/gean/Downloads/vm",
+        "file": "usart/usart0.c",
+        "output": ".pio/build/atmega328pb/src/usart/usart0.o"
+    }
+]
