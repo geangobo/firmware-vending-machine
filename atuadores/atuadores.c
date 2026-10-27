@@ -1,4 +1,4 @@
-﻿/*
+/*
  * atuadores.c
  *
  * Created: 19/12/2021 12:22:37
@@ -927,6 +927,12 @@ unsigned char MovimentaElevador(unsigned char p) {
 
 			case MM_Espera_Subir:
 				
+				Entrada_74H165.Expansor = Le74HC165();
+				if(Entrada_74H165.PORTINHOLA == 1) {
+					Movimenta_Elevador.Estado = MM_Pausado_Portinhola_Subindo;
+					break;
+				}
+
 				P_Elevador = PosicaoAtualElevador();					
 												 					
 				//Verifica se elevador chegou na posição solicitada
@@ -1019,6 +1025,13 @@ unsigned char MovimentaElevador(unsigned char p) {
 			break;	
 
 			case MM_Espera_Descer:
+				
+				Entrada_74H165.Expansor = Le74HC165();
+				if(Entrada_74H165.PORTINHOLA == 1) {
+					Movimenta_Elevador.Estado = MM_Pausado_Portinhola_Descendo;
+					break;
+				}
+
 				P_Elevador = PosicaoAtualElevador();
 										
 				//Verifica se elevador chegou na posição solicitada
@@ -1261,6 +1274,28 @@ unsigned char MovimentaElevador(unsigned char p) {
 					Movimenta_Elevador.TempoProximoEstado = 0;						
 				}
 					
+			break;
+			
+			case MM_Pausado_Portinhola_Subindo:
+				// Garante que o motor está desligado no software (para evitar faiscamento ao restaurar energia via fechamento da portinhola)
+				CLEAR_BIT(Port_Elevador, Pino_Sobe_Elevador);
+
+				Entrada_74H165.Expansor = Le74HC165();
+				if(Entrada_74H165.PORTINHOLA == 0) {
+					// Portinhola fechou, retoma o movimento de subida
+					Movimenta_Elevador.Estado = MM_Sobe;
+				}
+			break;
+
+			case MM_Pausado_Portinhola_Descendo:
+				// Garante que o motor está desligado no software
+				CLEAR_BIT(Port_Elevador, Pino_Desce_Elevador);
+
+				Entrada_74H165.Expansor = Le74HC165();
+				if(Entrada_74H165.PORTINHOLA == 0) {
+					// Portinhola fechou, retoma o movimento de descida
+					Movimenta_Elevador.Estado = MM_Desce;
+				}
 			break;						
 		}
 	} else {

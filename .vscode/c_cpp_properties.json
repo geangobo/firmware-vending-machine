@@ -1,0 +1,50 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/gean/Downloads/vm",
+                "/Users/gean/Downloads/vm/atuadores",
+                "/Users/gean/Downloads/vm/sensores",
+                "/Users/gean/Downloads/vm/adc",
+                "/Users/gean/Downloads/vm/spi",
+                "/Users/gean/Downloads/vm/timers",
+                "/Users/gean/Downloads/vm/.forma",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/gean/Downloads/vm",
+                    "/Users/gean/Downloads/vm/atuadores",
+                    "/Users/gean/Downloads/vm/sensores",
+                    "/Users/gean/Downloads/vm/adc",
+                    "/Users/gean/Downloads/vm/spi",
+                    "/Users/gean/Downloads/vm/timers",
+                    "/Users/gean/Downloads/vm/.forma",
+                    ""
+                ]
+            },
+            "defines": [
+                "F_CPU=16000000UL",
+                "PLATFORMIO=60200",
+                "ARDUINO_AVR_ATmega328PB",
+                "__AVR_ATmega328PB__",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "/Users/gean/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega328pb",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

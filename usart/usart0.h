@@ -1,4 +1,4 @@
-﻿/*
+/*
  usart0.h - Arquivo header
  Escrito por André N. da Cruz, Dezembro 2021
  SmartMach.
@@ -249,6 +249,8 @@ struct f{
 #define TamanhoRX_ComandoStatusPlacaControladora	1	//bytes
 #define TamanhoTX_ComandoStatusPlacaControladora	1	//bytes
 #define Parametro_VerificaStatusDaPlacaControladora	0x01
+#define StatusPlaca_Pronta							0x02	//Placa online e pronta (Ocioso) - STATUS_READY no middleware
+#define StatusPlaca_Ocupada							0x03	//Placa online, mas executando outra operação - STATUS_BUSY no middleware
 //***************************************************************************************************************************************************
 
 //Comando LÊ STATUS INDIVIDUAL DOS ATUADORES DA GAVETA (CONECTADO, DESCONECTADO OU EM CURTO)

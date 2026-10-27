@@ -937,11 +937,21 @@ int main(void) {
 									Maquina_Principal.Estado = M_Ocioso;																					
 								} else if(Retorno_Elevador > Status_MM_AcionamentoFinalizado) {
 									//Erro na movimentação do elevador			
-//#warning LIMITACAO ERRO NA MOVIMENTACAO DEPOIS DA COMPRA NAO RETORNA ERRO																									
-									AUX_SolicitaCompra.TempoProximoEstado = 0;	
+//#warning LIMITACAO ERRO NA MOVIMENTACAO DEPOIS DA COMPRA NAO RETORNA ERRO
 
-									//Finaliza Compra
-									Maquina_Principal.Estado = M_Ocioso;							
+									if((Retorno_Elevador == Status_MM_PortinholaAbertaOuFusivelRompido) ||
+									   (Retorno_Elevador == Status_MM_TravaDasGavetasAberta)) {
+										//Portinhola ou trava aberta: reinicia a máquina do elevador e
+										//permanece neste estado para retentar quando a porta fechar
+										InicializaMaquinaDeEstados_MovimentaElevador(MM_ElevadorDisponivel);
+										AUX_SolicitaCompra.TempoProximoEstado = 0;
+									} else {
+										//Erro definitivo (curto, timeout, fim de curso, etc.)
+										AUX_SolicitaCompra.TempoProximoEstado = 0;	
+
+										//Finaliza Compra
+										Maquina_Principal.Estado = M_Ocioso;
+									}
 								}		
 							} else {
 								//Elevador desabilitado aciona atuador
